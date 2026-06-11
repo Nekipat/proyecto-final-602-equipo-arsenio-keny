@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Institucional | Contacto</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="Marca">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="img/logoE-35.png" alt="">
+        </div>
+        <div>
+          <div class="brand-title">CECyTE EMSaD 35</div>
+          <div class="brand-subtitle">San Antonino El Alto</div>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <div class="chip" id="clock-chip">Actualizando...</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="./inicio.html" aria-label="Ir al inicio">Inicio</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div class="nav-links" id="main-menu">
+        <a class="nav-link" href="./inicio.html" data-nav="inicio">Inicio</a>
+        <a class="nav-link" href="./actividades.html" data-nav="servicios">Actividades</a>
+        <a class="nav-link" href="./acerca de.html" data-nav="equipo"> Diseño digital </a>
+        <a class="nav-link" href="./contacto.html" data-nav="contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" class="container page">
+    <section class="page-hero">
+      <h1>Contacto</h1>
+      <p class="muted">Canales de comunicación y formulario simple para solicitar información.</p>
+    </section>
+
+    <section class="contact-grid" aria-label="Formulario y datos de contacto">
+      <form class="contact-form" id="contact-form" novalidate>
+        <h2>Envíanos tu mensaje</h2>
+        <div class="form-row">
+          <label>
+            Nombre
+            <input name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required placeholder="tu@email.com" />
+          </label>
+        </div>
+
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" required placeholder="Escribe tu solicitud..."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <button class="btn btn-ghost" type="reset">Limpiar</button>
+        </div>
+
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-info" aria-label="Datos de contacto">
+        <h2>Datos</h2>
+        <div class="info-list">
+          <div class="info-item"><strong>Correo:</strong> info@arsenio-keny.org</div>
+          <div class="info-item"><strong>Teléfono:</strong> +52 (000) 000-0000</div>
+          <div class="info-item"><strong>Horario:</strong> Lun-Vie, 9:00 - 17:00</div>
+        </div>
+
+        <div class="map-card" id="ubicacion">
+          <h3>Ubicación</h3>
+          <p class="muted">
+            Tercera de 5 de Mayo, 71345 San Antonino el Alto, Oax.
+          </p>
+
+          <!-- Mapa (reemplaza el link de Google Maps si tienes una ubicación exacta) -->
+          <div class="map-embed" aria-label="Mapa de ubicación">
+            <iframe
+              title="Mapa - Ubicación CECyTE EMSaD 35"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.522929247783!2d-97.02032278697041!3d16.815995581008984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c70baa9cf1b375%3A0x87999f9c2d391086!2sCECyTEO%20EMSaD%2035!5e0!3m2!1ses!2smx!4v1780497152648!5m2!1ses!2smx"
+              width="400"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">CECyTE EMSaD 35</div>
+        <div class="footer-text">© <span id="year">2026</span> Todos los derechos reservados.</div>
+      </div>
+
+      <div class="footer-links" aria-label="Enlaces del pie">
+        <a href="./inicio.html">Inicio</a>
+        <a href="./actividades.html">Actividades</a>
+        <a href="./acerca de.html">Diseño digital</a>
+        <a href="./contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-note">Hecho por ARSENIO-KENY</div>
+    </div>
+  </footer>
+
+  <script src="./scrip.js" defer></script>
+</body>
+</html>
+
